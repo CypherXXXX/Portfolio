@@ -17,7 +17,7 @@ export function Hero() {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        className="text-[clamp(1.8rem,6vw,6rem)] leading-none font-black tracking-wider md:tracking-widest uppercase text-transparent bg-clip-text bg-linear-to-b from-white to-white/60 mb-6 font-orbitron drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+                        className="text-[clamp(1.5rem,5vw,4.5rem)] leading-none font-black tracking-wider md:tracking-widest uppercase text-transparent bg-clip-text bg-linear-to-b from-white to-white/60 mb-6 font-orbitron drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] whitespace-nowrap"
                     >
                         {DATA.profile.name}
                     </motion.h1>
