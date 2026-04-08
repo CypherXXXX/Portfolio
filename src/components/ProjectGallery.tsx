@@ -44,13 +44,20 @@ export function ProjectGallery() {
                             target="_blank"
                             className="relative w-full aspect-video rounded-lg overflow-hidden block"
                         >
-                            <Image
-                                src={project.image}
-                                alt={project.name}
-                                fill
-                                unoptimized={project.image.endsWith('.gif')}
-                                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
+                            {project.image.endsWith('.gif') ? (
+                                <img
+                                    src={project.image}
+                                    alt={project.name}
+                                    className="w-full h-full absolute inset-0 object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
+                            ) : (
+                                <Image
+                                    src={project.image}
+                                    alt={project.name}
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
+                            )}
                             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
                                 <span className="text-white font-rajdhani font-bold text-lg flex items-center gap-2 border border-white/50 px-6 py-2 rounded-full hover:bg-white hover:text-black transition-colors uppercase tracking-wider">
                                     View Project <ArrowUpRight className="w-5 h-5" />
