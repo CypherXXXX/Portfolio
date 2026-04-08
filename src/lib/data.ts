@@ -33,7 +33,7 @@ export const DATA = {
             links: {
                 github: "https://github.com/CypherXXXX/OmniSearch",
             },
-            image: "/OmniSearch.gif",
+            image: "/omni.gif",
         },
         {
             name: "DocuMind",
