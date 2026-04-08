@@ -35,7 +35,9 @@ export function ProjectGallery() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1, duration: 0.6 }}
-                        className="group flex flex-col gap-6 bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:border-purple-500/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] hover:-translate-y-2"
+                        className={`group flex flex-col gap-6 bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:border-purple-500/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.1)] hover:-translate-y-2 ${
+                            index === 2 && DATA.projects.length === 3 ? "md:col-span-2 md:w-[calc(50%-1.5rem)] md:justify-self-center w-full" : ""
+                        }`}
                     >
                         <Link
                             href={project.links.demo || project.links.github}
