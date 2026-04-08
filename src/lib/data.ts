@@ -22,43 +22,27 @@ export const DATA = {
     ],
     projects: [
         {
-            name: "NexusAI",
-            description: "Autonomous Multi-Agent Research CRM.",
-            tech: ["LangGraph", "Llama 3.3", "FastAPI", "Groq"],
+            name: "OmniSearch",
+            description: "Autonomous Multi-Agent Research Platform.",
+            tech: ["Next.js 14", "LangGraph", "FastAPI", "PostgreSQL", "Redis", "Celery", "Docker Compose"],
             features: [
-                "Engineered a multi-step autonomous agent using LangGraph and Llama 3.3 (70B) that orchestrates parallel research workflows via Tavily AI.",
-                "Architected an event-driven CRM backend with FastAPI (Async) and SQLite, optimizing for <200ms inference.",
-                "Developed 'Weighted Confidence Scoring' engine to qualify leads and generate hallucination-free outreach.",
+                "Architected a stable, end-to-end autonomous research platform utilizing Next.js and LangGraph, orchestrating a sequential 5-phase state machine (Planning, Crawling, Indexing, Retrieval, Publishing).",
+                "Engineered an enterprise-grade RAG pipeline using PostgreSQL (pgvector) for HNSW-indexed vector storage, evaluating concurrent live sources via Google GenAI SDK to synthesize precise context reports.",
+                "Designed a distributed asynchronous ingestion architecture integrating Celery and Redis to decouple JavaScript-rendered web scraping via Crawl4AI across microservices."
             ],
             links: {
-                github: "https://github.com/CypherXXXX/nexusai",
-                demo: "https://nexusai-ivory.vercel.app/",
+                github: "https://github.com/CypherXXXX/OmniSearch",
             },
-            image: "/NexusAI.png",
-        },
-        {
-            name: "EdCare",
-            description: "Predictive Health Diagnostics Engine.",
-            tech: ["Python", "Scikit-Learn", "React 19", "TanStack Query"],
-            features: [
-                "Engineered a real-time predictive diagnostic engine using Python (Flask) & Scikit-Learn with Gradient Boosting Classifier.",
-                "Architected a scalable React 19 interface with Optimistic UI patterns via TanStack Query.",
-                "Designed a secure PostgreSQL schema with Row Level Security (RLS) and Zod validation.",
-            ],
-            links: {
-                github: "https://github.com/CypherXXXX/_edcare_",
-                demo: "https://edcare-six.vercel.app",
-            },
-            image: "/EdCare.png",
+            image: "/OmniSearch.gif",
         },
         {
             name: "DocuMind",
-            description: "Intelligent RAG Document Analysis.",
-            tech: ["Next.js 16", "Stripe", "Inngest", "RAG"],
+            description: "Intelligent RAG Document Analysis Platform.",
+            tech: ["Next.js 16", "RAG", "Stripe", "Inngest Queues", "BM25"],
             features: [
-                "Architected a Hybrid RAG Engine combining Vector Search and BM25 using Reciprocal Rank Fusion (RRF).",
-                "Built an event-driven ingestion system using Inngest serverless queues for complex file parsing.",
-                "Deployed high-performance infrastructure with Llama 3.3 70B via Groq and Stripe metered billing.",
+                "Orchestrated a custom retrieval system combining Vector Search and BM25 Trigram algorithms using Reciprocal Rank Fusion (RRF); improving context retrieval accuracy by 40%.",
+                "Leveraged Next.js 16 Server Actions for secure data mutation and efficient backend communication, reducing client application cold start times by 30%.",
+                "Established a decoupling architecture for resource-intensive file processing utilizing Inngest serverless queues to parse complex document formats asynchronously."
             ],
             links: {
                 github: "https://github.com/CypherXXXX/docu-mind",
@@ -68,12 +52,12 @@ export const DATA = {
         },
         {
             name: "GitMetrix",
-            description: "Real-Time Developer Velocity Dashboard.",
-            tech: ["Next.js 16", "GraphQL", "Redis", "Recharts"],
+            description: "AI Developer Intelligence Platform & Repository Analytics.",
+            tech: ["Next.js 16", "pgvector", "Supabase", "MoE Router", "React Flow"],
             features: [
-                "Engineered a real-time analytics engine processing 10,000+ annual GitHub events via GraphQL API.",
-                "Implemented Redis Edge Caching to reduce data retrieval latency by 90%.",
-                "Developed a proprietary 'Velocity Score' algorithm and resilient 'Obsidian' visualization layer.",
+                "Architected a hybrid RAG-based code intelligence engine analyzing GitHub repositories utilizing a Mixture-of-Experts LLM router (Cerebras, Groq, DeepSeek).",
+                "Engineered an AST-aware distributed indexing pipeline using Inngest background workflows, capable of processing repositories with up to 1,500 files per job.",
+                "Developed an interactive architecture visualizer and analytics dashboard using React Flow and custom graph traversal algorithms to map file dependencies."
             ],
             links: {
                 github: "https://github.com/CypherXXXX/GitMetrix",
@@ -83,10 +67,10 @@ export const DATA = {
         },
     ],
     skills: {
-        languages: ["Python", "TypeScript", "SQL", "C++", "HTML5 & CSS3"],
-        frontend: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Radix UI", "TanStack Query"],
-        backend: ["FastAPI", "Node.js", "Flask", "PostgreSQL", "Supabase", "Redis"],
-        ai: ["LangGraph", "Llama", "RAG", "Vector DBs", "Groq API", "Ollama"],
-        devops: ["Docker", "GitHub Actions", "Vercel", "Render", "Stripe", "Clerk"],
+        languages: ["C++", "Python", "TypeScript", "JavaScript", "SQL", "HTML5 & CSS3"],
+        frontend: ["Next.js", "React 19", "Tailwind CSS v4", "TanStack Query", "Framer Motion", "React Flow"],
+        backend: ["FastAPI", "Node.js", "Flask", "PostgreSQL (pgvector)", "Supabase", "Redis"],
+        ai: ["LangGraph", "Agentic Workflows", "RAG Pipelines", "MoE Router", "BAAI Cross-Encoder", "Ollama"],
+        devops: ["Docker Compose", "Celery", "Inngest", "Git", "WebSockets", "Vercel"],
     },
 };
