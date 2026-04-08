@@ -1,0 +1,53 @@
+Ankit Ranjan Das
++91 9572523758 | ankitdas3758@gmail.com | LinkedIn | GitHub | Portfolio
+Education
+Vellore Institute of Technology (VIT) Bhopal, India
+Bachelor of Technology in Computer Science 2022 – Present
+Technical Skills
+Languages: C++, Python, TypeScript, JavaScript, SQL
+AI Engineering: LangGraph, RAG Pipelines, MoE Router, Agentic Workflows, pgvector, HNSW, BAAI Cross-Encoder
+Frameworks: Next.js 14/16 (App Router), React 19, FastAPI, Node.js, Flask, Tailwind CSS v4, TanStack Query
+DevOps & Infrastructure: Docker Compose, Celery, Redis, PostgreSQL, Supabase, Git, WebSockets, Inngest, FAISS
+Experience
+Tata Steel Web Developer Intern
+EdCare | Predictive Health Diagnostics Engine
+– Engineered a real-time predictive diagnostics backend utilizingPython (Flask) and Scikit-Learn, deploying a trained Gradient
+Boosting Classifier to process biological markers inunder 100ms for instant patient risk assessment.
+– Implemented a secure PostgreSQL schema enforcing strict Row Level Security (RLS), accelerating analytical query
+performance by 40% via compound SQL indexing and establishing robust data validation pipelines usingZod.
+Projects
+OmniSearch | Autonomous Multi-Agent Research Platform Code
+Next.js 14, LangGraph, FastAPI, PostgreSQL (pgvector), Redis, Celery, Docker Compose
+– Architected a stable, end-to-end autonomous research platform utilizingNext.js and LangGraph, orchestrating a sequential
+5-phase state machine (Planning, Crawling, Indexing, Retrieval, Publishing); executed dynamic, depth-3 multi-branch search
+strategies via Monte Carlo Tree Search (MCTS)and evaluated 20+ live browser sources concurrently leveraging theGoogle
+GenAI SDK to autonomously synthesize precise 32,000-token context reports.
+– Engineered an enterprise-grade RAG pipeline usingPostgreSQL (pgvector) for HNSW-indexed vector storage (m=32,
+ef construction=256), debugging complex SQL schemas to securely ingest 768-dimensional document chunks; enforced strict
+≥0.95 semantic deduplication thresholds and built a hybrid retrieval engine (BM25 + RRF, k=60), utilizing a BAAI
+cross-encoder to isolate the top-15 most factually relevant fragments.
+– Designed a distributed asynchronous ingestion architecture integratingCelery and Redis to decouple and scale
+JavaScript-rendered web scraping viaCrawl4AI across a 4-worker concurrency model; containerized 7 independent
+microservices using Docker Compose and resolved critical event-loop blocking bottlenecks within theFastAPI backend,
+guaranteeing sub-second WebSocket telemetrystreaming to the client UI under heavy load.
+GitMetrix | AI Developer Intelligence Platform & Repository Analytics Live Demo | Code
+Next.js 16, pgvector, Supabase, Inngest, MoE LLM Router, React Flow, Redis
+– Architected a hybrid RAG-based code intelligence engineanalyzing GitHub repositories utilizing a Mixture-of-Experts LLM
+router (Cerebras, Groq, DeepSeek); implemented semantic retrieval withSupabase pgvector combined with PostgreSQL
+full-text search, and appliedCohere cross-encoder reranking to surface the top 12 most relevant symbol-aware code chunks for
+accurate repository Q&A.
+– Engineered an AST-aware distributed indexing pipelineusing Inngest background workflows, capable of processing
+repositories with up to 1,500 files per job; optimized throughput with 15 concurrent GitHub fetch streams,Upstash Redis tree
+caching (3600s TTL), and batched embedding generation to bypass API rate limits.
+– Developed an interactive architecture visualizer and analytics dashboard usingReact Flow and custom graph traversal
+algorithms (BFS/DFS) to map file dependencies and detect circular imports; computed cyclomatic complexity and developer
+velocity metrics to powerAI pull-request reviewsand code health analysis.
+DocuMind | Intelligent RAG Document Analysis Platform Live Demo | Code
+Next.js 16, RAG, Stripe, Inngest Queues, BM25
+– Orchestrated a custom retrieval system combiningVector Searchand BM25 Trigram algorithmsusing Reciprocal Rank
+Fusion (RRF); this architecture significantly improved context retrieval accuracy by 40% and reduced token usage overhead by
+60% compared to standard vector-only solutions.
+– Leveraged Next.js 16 Server Actionsfor secure data mutation and efficient backend communication, eliminating the need for
+separate REST API routes and reducing client applicationcold start times by 30%.
+– Established a decoupling architecture for resource-intensive file processing utilizingInngest serverless queuesto parse complex
+document formats (PDF, PPTX, DOCX) asynchronously withautomated OCR fallback mechanisms.
