@@ -59,7 +59,7 @@ export function Navbar() {
 
                     <nav className="hidden md:flex gap-8 items-center z-50 text-white">
                         <a
-                            href="/___Ankit_Resume___.pdf"
+                            href="/_____Ankit_Resume_____.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-5 py-2 bg-white/10 hover:bg-white hover:text-black border border-white/10 rounded-full transition-all duration-300 text-xs font-mono uppercase tracking-widest hover:scale-105 active:scale-95"
@@ -104,7 +104,7 @@ export function Navbar() {
                             className="flex flex-col gap-8 text-center"
                         >
                             {[
-                                { label: "Resume", href: "/___Ankit_Resume___.pdf", external: true },
+                                { label: "Resume", href: "/_____Ankit_Resume_____.pdf", external: true },
                                 { label: "Projects", href: "#projects" },
                                 { label: "Skills", href: "#skills" },
                                 { label: "Contact", href: "#contact" },
