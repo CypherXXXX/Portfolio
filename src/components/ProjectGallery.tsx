@@ -48,6 +48,7 @@ export function ProjectGallery() {
                                 src={project.image}
                                 alt={project.name}
                                 fill
+                                unoptimized={project.image.endsWith('.gif')}
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
